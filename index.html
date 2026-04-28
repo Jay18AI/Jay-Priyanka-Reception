@@ -604,29 +604,8 @@ body {
   <span id="audioLabel">Play Music</span>
 </div>
 <audio id="weddingAudio" loop>
-  <source src="https://cdn.pixabay.com/download/audio/2022/03/15/audio_c8b3a1b5b3.mp3?filename=romantic-piano-ambient-110624.mp3"/>
+  <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3" type="audio/mpeg"/>
 </audio>
-<script>
-let isPlaying = false;
-
-function toggleAudio() {
-  const audio = document.getElementById("weddingAudio");
-  const label = document.getElementById("audioLabel");
-  const icon = document.getElementById("icon");
-
-  if (!isPlaying) {
-    audio.play();
-    label.innerText = "Pause Music";
-    icon.innerText = "⏸️";
-  } else {
-    audio.pause();
-    label.innerText = "Play Music";
-    icon.innerText = "▶️";
-  }
-
-  isPlaying = !isPlaying;
-}
-</script>
 <!-- ═══════ HERO ═══════ -->
 <section class="hero">
 
